@@ -29,69 +29,72 @@ header {
   }
 }
 
-#beneficios{
+#beneficios {
   .card {
     border: none !important;
     background: none !important;
     margin: 20px;
     padding: 20px;
     transition: transform 0.3s ease-in-out;
-  
+
     &:hover {
       transform: translateY(-5px);
     }
   }
-    .card-header {
-      color: #35424a;
-      background: none !important;
-      padding: 15px;
-      font-size: 1.2em;
-      text-align: left;
-      border: none !important;
-    }
-  
+
+  .card-header {
+    color: #35424a;
+    background: none !important;
+    padding: 15px;
+    font-size: 1.2em;
+    text-align: left;
+    border: none !important;
+  }
+
   .card-body {
     opacity: 0;
     transform: translateY(40px);
     transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
   }
-  
+
   .card-body.visible {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
 #modulos {
   .card {
     background-color: #ffffff;
     border-radius: 20px !important;
     border: none !important;
     border-left: 4px solid green !important;
-    
+
     margin: 20px;
     padding: 20px;
     transition: transform 0.3s ease-in-out;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  
+
     &:hover {
       transform: translateY(-5px);
     }
   }
-    .card-header {
-      color: #35424a;
-      background: none !important;
-      padding: 15px;
-      font-size: 1.2em;
-      text-align: left;
-      border: none !important;
-    }
-  
+
+  .card-header {
+    color: #35424a;
+    background: none !important;
+    padding: 15px;
+    font-size: 1.2em;
+    text-align: left;
+    border: none !important;
+  }
+
   .card-body {
     opacity: 0;
     transform: translateY(40px);
     transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
   }
-  
+
   .card-body.visible {
     opacity: 1;
     transform: translateY(0);
@@ -117,6 +120,11 @@ header {
       color: #35424a;
       font-weight: lighter;
       font-size: 1em;
+    }
+
+    .small {
+      font-size: 0.8em !important;
+      color: #666 !important;
     }
   }
 }
@@ -180,7 +188,7 @@ header {
 }
 
 .text-green-500 {
-    color: rgb(34 197 94 );
+  color: rgb(34 197 94);
 }
 
 h1 {
@@ -271,8 +279,8 @@ footer p {
     font-size: 1.2em !important;
     font-weight: bold !important;
   }
-  
-  h3{
+
+  h3 {
     font-size: 1em !important;
     font-weight: bold !important;
   }
@@ -292,6 +300,7 @@ footer p {
     .hero-text {
       margin: 0;
       font-size: 1.3em;
+
       button {
         width: 100%;
       }
@@ -310,12 +319,14 @@ footer p {
     }
   }
 
-  header, .chamada {
+  header,
+  .chamada {
     .hero-cta {
       margin-top: 25px;
       font-size: 0.9em;
     }
   }
+
   .hero-bg {
     min-height: 30vw;
     max-height: 68vw;
