@@ -1,62 +1,570 @@
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Vendas</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
-  </head>
-  <body>
-    <header>
-      <h1>Bem-vindo à Nossa Página de Vendas</h1>
-      <p>Encontre os melhores produtos com descontos incríveis!</p>
-    </header>
-    <nav>
-      <ul>
-        <li><a href="#produtos">Produtos</a></li>
-        <li><a href="#sobre">Sobre Nós</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-    <main>
-      <section id="produtos">
-        <h2>Nossos Produtos</h2>
-        <div class="produto">
-          <img src="assets/images/produto1.jpg" alt="Produto 1">
-          <h3>Produto 1</h3>
-          <p>Descrição do Produto 1.</p>
-          <p>Preço: R$ 99,99</p>
-          <button>Comprar</button>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mentoria de Métodos Contraceptivos</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+  <meta name="description"
+    content="Mentoria online para enfermeiros(as) que desejam atuar com segurança e embasamento na orientação sobre contracepção." />
+  <meta name="keywords" content="mentoria, contracepção, enfermagem, saúde reprodutiva, métodos contraceptivos" />
+  <meta name="author" content="Mentoria de Métodos Contraceptivos" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+  <header class="d-flex flex-column flex-md-row-reverse justify-content-lg-start align-items-center">
+    <section class="col-image hero-image d-block text-right">
+      <img src="assets/topo_mentoria.png" class="hero-bg" alt="Mentoria de Métodos Contraceptivos" />
+    </section>
+    <section class="p-4 col-hero d-flex flex-column justify-content-center text-left">
+      <div class="hero-text">
+        <h1>Mentoria de Métodos Contraceptivos</h1>
+        <p>
+          Essa mentoria vai te transformar em referência no atendimento de planejamento reprodutivo!
+        </p>
+        <button class="hero-cta" onclick="window.location.href='https://payfast.greenn.com.br/118434'"
+          rel="noopener noreferrer" title="QUERO GARANTIR MINHA VAGA" aria-label="QUERO GARANTIR MINHA VAGA">
+          QUERO GARANTIR MINHA VAGA
+        </button>
+      </div>
+    </section>
+  </header>
+  <main>
+   <section class="py-5 bg-light" id="beneficios">
+  <div class="container px-4">
+    <h2 class="mb-5 text-center">Benefícios da Mentoria</h2>
+    <div class="row">
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100 benefit-card">
+          <div class="card-benefit text-center">
+            <div class="benefit-icon mb-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="h5 font-weight-bold mb-3">Conhecimento Aprofundado</h3>
+            <p>Você terá acesso a informações detalhadas e atualizadas sobre todos os métodos contraceptivos disponíveis atualmente no mercado, incluindo mecanismos de ação, eficácia, vantagens e desvantagens de cada um. Este conhecimento sólido permitirá que você ofereça orientações precisas e personalizadas para cada paciente.</p>
+          </div>
         </div>
-        <div class="produto">
-          <img src="assets/images/produto2.jpg" alt="Produto 2">
-          <h3>Produto 2</h3>
-          <p>Descrição do Produto 2.</p>
-          <p>Preço: R$ 149,99</p>
-          <button>Comprar</button>
+      </div>
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100 benefit-card">
+          <div class="card-benefit text-center">
+            <div class="benefit-icon mb-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+              </svg>
+            </div>
+            <h3 class="h5 font-weight-bold mb-3">Protocolos Práticos</h3>
+            <p>Você receberá protocolos práticos e fluxogramas de decisão que facilitarão a escolha do método mais adequado para cada perfil de paciente, considerando fatores como idade, histórico médico, preferências pessoais e planos reprodutivos futuros. Estes recursos serão valiosos para sua prática clínica diária.</p>
+          </div>
         </div>
-        <!-- Adicione mais produtos conforme necessário -->
-      </section>
-      <section id="sobre">
-        <h2>Sobre Nós</h2>
-        <p>Informações sobre a empresa e sua missão.</p>
-      </section>
-      <section id="contato">
-        <h2>Contato</h2>
-        <form>
-          <label for="nome">Nome:</label>
-          <input type="text" id="nome" name="nome" required>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-          <label for="mensagem">Mensagem:</label>
-          <textarea id="mensagem" name="mensagem" required></textarea>
-          <button type="submit">Enviar</button>
-        </form>
-      </section>
-    </main>
-    <footer>
-      <p>&copy; 2023 Sua Empresa. Todos os direitos reservados.</p>
-    </footer>
-    <script src="scripts/script.js" defer></script>
-  </body>
+      </div>
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100 benefit-card">
+          <div class="card-benefit text-center">
+            <div class="benefit-icon mb-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="h5 font-weight-bold mb-3">Manejo de Efeitos Colaterais</h3>
+            <p>Você aprenderá estratégias eficazes para orientar pacientes sobre possíveis efeitos colaterais, como identificá-los precocemente e como manejá-los adequadamente, aumentando a adesão ao método escolhido e a satisfação das pacientes com o aconselhamento recebido.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100 benefit-card">
+          <div class="card-benefit text-center">
+            <div class="benefit-icon mb-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+              </svg>
+            </div>
+            <h3 class="h5 font-weight-bold mb-3">Casos Complexos</h3>
+            <p>Você desenvolverá segurança para lidar com casos complexos, como pacientes com comorbidades, adolescentes, mulheres em período pós-parto ou perimenopausa, através de estudos de casos reais e discussões aprofundadas sobre as particularidades de cada situação.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100 benefit-card">
+          <div class="card-benefit text-center">
+            <div class="benefit-icon mb-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+              </svg>
+            </div>
+            <h3 class="h5 font-weight-bold mb-3">Atualização Constante</h3>
+            <p>Você terá acesso a informações sobre as últimas novidades do mercado, pesquisas recentes e tendências futuras em contracepção, mantendo-se sempre à frente em sua área de atuação e oferecendo o que há de mais atual para seus pacientes.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100 benefit-card">
+          <div class="card-benefit text-center">
+            <div class="benefit-icon mb-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+              </svg>
+            </div>
+            <h3 class="h5 font-weight-bold mb-3">Comunicação Efetiva</h3>
+            <p>Você aprimorará suas habilidades de comunicação para transmitir informações complexas de maneira clara e acessível, adaptando sua linguagem ao nível de compreensão de cada paciente e criando um ambiente de confiança que favorece o diálogo aberto sobre questões contraceptivas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section id="sobre" class="card-body my-5 px-5 bg-gray-light">
+      <div class="container">
+        <h2 class="mb-4 text-center">Eu vou caminhar com você.</h2>
+        <ul class="list-unstyled sobre-list">
+          <li>📌 Você não vai mais se sentir inseguro(a) na hora de escolher um método.</li>
+          <li>📌 Não vai mais travar diante de uma paciente com SOP, endometriose, ou com risco para trombose.</li>
+          <li>📌 Vai entender o que a graduação não te ensinou e o que ninguém te explicou nos protocolos.</li>
+          <li>Durante semanas, eu vou te acompanhar de perto, com aulas ao vivo, conteúdo direto da prática e orientação
+            personalizada. As aulas ao vivo ficarão gravadas e disponíveis por 1 ano.
+            Você pode assistir no seu ritmo e voltar quantas vezes quiser.
+          </li>
+          <li>
+            Além disso, vai ter acesso aos protocolos mais atualizados e artigos científicos usados na prática real.
+            Tudo pensado para fortalecer sua segurança e autonomia no atendimento.
+          </li>
+          <li class="py-3">
+            <h3 class="font-weight-bold">📌 Essa mentoria vai tirar você do básico e te levar a dominar uma das áreas que
+              mais cresce na enfermagem.</h3>
+          </li>
+          <li>💰 Uma área que gera retorno financeiro, autoridade profissional e segurança no atendimento.</li>
+          <li>
+            <h3 class="font-weight-bold text-center my-3">Chegou a sua hora de dominar a contracepção com clareza, ciência
+              e prática real de consultório.</h3>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="modulos" class="container my-5">
+      <h2 class="mb-4">Conteúdo Programático</h2>
+      <div class="hero-underline"></div>
+      <div class="row">
+        <!-- Módulo 1 -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-header font-weight-bold">
+              Módulo 1
+            </div>
+            <div class="card-body">
+              <ul>
+                <li>Ciclo Menstrual</li>
+                <li>Tipos de Estrogênios e Progestágenos</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Módulo 2 -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-header font-weight-bold">
+              Módulo 2: Métodos Contraceptivos Hormonais
+            </div>
+            <div class="card-body">
+              <ul>
+                <li class="font-weight-bold">Métodos Combinados</li>
+                <ul>
+                  <li>Anticoncepcional Oral</li>
+                  <li>Injetável Mensal</li>
+                  <li>Anel Vaginal e Adesivo</li>
+                </ul>
+                <li class="font-weight-bold mt-2">Métodos Somente de Progestágeno</li>
+                <ul>
+                  <li>Injetável Trimestral</li>
+                  <li>Pílula</li>
+                  <li>Implanon</li>
+                  <li>Sistema Intrauterino Hormonal</li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Módulo 3 -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-header font-weight-bold">
+              Módulo 3: Métodos Comportamentais
+            </div>
+            <div class="card-body">
+              <ul>
+                <li>Tabelinha e Temperatura Basal</li>
+                <li>Muco cervical – Billings</li>
+                <li>Coito interrompido</li>
+                <li>Método dos dias fixos</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Módulo 4 -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-header font-weight-bold">
+              Módulo 4: Métodos de Barreira
+            </div>
+            <div class="card-body">
+              <ul>
+                <li>Preservativo Masculino e Feminino</li>
+                <li>Diafragma</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Módulo 5 -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-header font-weight-bold">
+              Módulo 5: Método não hormonal – DIU de cobre
+            </div>
+            <div class="card-body">
+              <ul>
+                <li>DIU de cobre</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Módulo 6 -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-header font-weight-bold">
+              Módulo 6: Métodos Definitivos
+            </div>
+            <div class="card-body">
+              <ul>
+                <li>Laqueadura</li>
+                <li>Vasectomia</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Módulo 7 -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-header font-weight-bold">
+              Módulo 7: Contracepção em Fases Específicas da Vida
+            </div>
+            <div class="card-body">
+              <ul>
+                <li>No Puerpério</li>
+                <li>Na Adolescência</li>
+                <li>No Climatério</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Módulo 8 -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-header font-weight-bold">
+              Módulo 8: Contracepção de Emergência
+            </div>
+            <div class="card-body">
+              <ul>
+                <li>Pílula do dia seguinte</li>
+                <li>DIU de cobre</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Módulo 9 -->
+        <div class="col-md-12 mb-4">
+          <div class="card h-100">
+            <div class="card-header font-weight-bold">
+              Módulo 9: Consulta de Planejamento Familiar
+            </div>
+            <div class="card-body">
+              <ul>
+                <li>Escolha Personalizada da Pílula e Gestão de Efeitos Adversos</li>
+                <li>Estrutura de uma consulta completa para planejamento familiar</li>
+                <li>Perguntas-chave para identificar o método ideal e como transmitir segurança</li>
+                <li>Aspectos Específicos sobre Anticoncepcionais
+                  <ul>
+                    <li>Tocofobia</li>
+                    <li>SOP e Acne</li>
+                    <li>Libido</li>
+                    <li>Efeitos adversos (Náuseas, mastalgia, cefaleia)</li>
+                  </ul>
+                </li>
+                <li>Manejo de Sangramentos</li>
+                <li>Casos Clínicos Práticos</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="d-flex flex-column flex-md-row-reverse justify-content-between">
+      <div class="col-image hero-image text-right">
+        <img src="assets/mentora-bg.png" class="hero-bg" alt="Mentoria de Métodos Contraceptivos" />
+      </div>
+      <div class="col-hero d-flex flex-column justify-content-center text-left">
+        <div class="card-body hero-text">
+          <span>Quem te ensinará</span>
+          <h1>Naiara Neres</h1>
+          <div class="hero-underline"></div>
+          <p>
+            Naiara é uma das enfermeiras mais experientes e respeitadas na área, com mais de 13 anos de atuação e
+            especialização em ginecologia. Referência em métodos contraceptivos, ela foi pioneira ao abrir o primeiro
+            consultório de enfermagem ginecológica em sua cidade — que, quatro anos depois, se transformou em uma
+            clínica.
+          </p>
+          <p>
+            Com a vivência de quem está na prática todos os dias, Naiara começou a compartilhar seu conhecimento por
+            meio de cursos presenciais e, depois, também no formato on-line, impactando profissionais em todo o Brasil.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="depoimentos" class="container my-5">
+      <h2 class="mb-4">Depoimentos de quem viveu a transformação na prática</h2>
+      <p class="mb-5">
+        Histórias reais de profissionais que hoje atendem com segurança, clareza e resultados — graças a um método que
+        une teoria, prática e acompanhamento de verdade.
+      </p>
+      <div class="row justify-content-center">
+        <div class="col-md-12 mb-4">
+          <div>
+            <div class="card-body d-flex align-items-start">
+              <img src="assets/depoimentos/depo1.png" alt="Foto de Micheline Guimarães" class="rounded-circle mr-3"
+                style="width:64px;height:64px;object-fit:cover;">
+              <blockquote class="blockquote mb-0">
+                <p>"... passando pra agradecer todo suporte dado durante esses meses de aula , queria dizer que suas
+                  aulas são incrivelmente esclarecedoras , que vc tem uma metodologia sem igual e que consegue
+                  transformar coisas complexas em algo muito simples . Contracepção é um mundo , inclusive um mundo de
+                  oportunidades pra quem está nos consultórios privados . Seu curso é um divisor de águas , uma luz pra
+                  quem quer ser luz na vida de tantas mulheres . Gratidão por tanta acolhida a cada quarta feira e dizer
+                  que já morro de saudades dos nosso encontros semanais. Por falar nisso, posso me inscrever novamente ?
+                  🤗"</p>
+                <footer class="blockquote-footer">Micheline Guimarães.</footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 mb-4">
+          <div>
+            <div class="card-body d-flex align-items-start">
+              <img src="assets/depoimentos/depo5.png" alt="Foto de Ana Cláudia" class="rounded-circle mr-3"
+                style="width:64px;height:64px;object-fit:cover;">
+              <blockquote class="blockquote mb-0">
+                <p>"Sou enfermeira obstetra e neonatal e no ano passado eu e minha sócia (também enfermeira) decidimos
+                  abrir nosso consultório de enfermagem. Eu me senti muito insegura quando apareceram procedimentos
+                  relacionados a DIU e Implanon, principalmente na explicação. Conheci a Naiara através do Método
+                  Fumagalli, e foi (e está sendo) um divisor de águas para mim. As aulas são excelentes, ela é de um
+                  conhecimento impressionante. Nos inspira e nos motiva. E Naiara nos dá o suporte não só durante o
+                  curso, mas após ele também. Me sinto cada vez mais preparada com o apoio e através do conhecimento
+                  dela ofertado na mentoria. Foi uma das minhas melhores compras! Todos os enfermeiros que trabalham com
+                  a contracepção, precisam conhecê-la!"</p>
+                <footer class="blockquote-footer">Ana Cláudia</footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 mb-4">
+          <div>
+            <div class="card-body d-flex align-items-start">
+              <img src="assets/depoimentos/depo4.png" alt="Foto de Helen Quirino" class="rounded-circle mr-3"
+                style="width:64px;height:64px;object-fit:cover;">
+              <blockquote class="blockquote mb-0">
+                <p>"Seu curso foi um verdadeiro divisor de águas na minha vida profissional. Minhas condutas
+                  mudaram completamente, e isso impactou diretamente a vida das minhas pacientes. Hoje me sinto segura
+                  para conduzir de forma assertiva qualquer atendimento em saúde reprodutiva. Sei orientar com clareza
+                  sobre todos os métodos contraceptivos — tanto os que a mulher pode usar quanto os que não são
+                  indicados para ela — e consigo lidar com tranquilidade com os efeitos adversos.
+                  A mentoria me mostrou o quanto ainda havia para aprender nesse universo tão vasto e importante que é a
+                  contracepção. E mais do que conhecimento técnico, encontrei acolhimento, amizade e partilha.
+                  Sou só gratidão a você! Entraria 10 vezes na mentoria, porque sei o quanto ela transforma. Super
+                  recomendo!</p>
+                <footer class="blockquote-footer">Helen Quirino</footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 mb-4">
+          <div>
+            <div class="card-body d-flex align-items-start">
+              <img src="assets/depoimentos/depo3.png" alt="Foto de Patrícia Lima" class="rounded-circle mr-3"
+                style="width:64px;height:64px;object-fit:cover;">
+              <blockquote class="blockquote mb-0">
+                <p>"Fazer a mentoria de métodos contraceptivos com você, foi uma virada de chave na
+                  minha vida, simplesmente amei e me ajudou e ajuda muito nos meus atendimentos. Super recomendo sua
+                  mentoria.♥️
+                  "</p>
+                <footer class="blockquote-footer">Patrícia Lima</footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 mb-4">
+          <div>
+            <div class="card-body d-flex align-items-start">
+              <img src="assets/depoimentos/depo2.png" alt="Foto de Karine Falci" class="rounded-circle mr-3"
+                style="width:64px;height:64px;object-fit:cover;">
+              <blockquote class="blockquote mb-0">
+                <p>"... este foi o quarto curso que fiz com vc, todos que eu fiz eu amei, foi um divisor de
+                  águas! E essa mentoria de métodos contraceptivos me mostrou o quão importante é se aprofundar nesse
+                  tema que até na faculdade só ensina o básico! Aprendi demais e tenho crtz que todos que fizeram esse
+                  curso cresceram bastante na profissão e melhoraram o atendimento! Ansiosa para as próximas mentorias
+                  que vc lançar!
+                  "</p>
+                <footer class="blockquote-footer">Karine Falci</footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 mb-4">
+          <div>
+            <div class="card-body d-flex align-items-start">
+              <img src="assets/depoimentos/depo6.png" alt="Foto de Thaís Brighente" class="rounded-circle mr-3"
+                style="width:64px;height:64px;object-fit:cover;">
+              <blockquote class="blockquote mb-0">
+                <br>"... quero lhe agradecer pela profissional que és e que me tornou a ser com um entendimento
+                grandioso
+                na contracepção, toda sua calma direcionamento domínio no assunto nos faz querer sempre mais e quanto
+                somos capaz.</br>
+                É muito orgulho fazer parte da primeira turma de métodos contraceptivos bjo enorme pra ti !!
+                Haaa quando tiver algum curso novo me avisa!
+                "</p>
+                <footer class="blockquote-footer">Thaís Brighente</footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5 bg-gray-light" id="investimento">
+      <div class="container">
+        <h1 class="text-green-dark">Investimento</h1>
+        <div class="hero-underline"></div>
+        <div class="mx-auto" style="max-width: 800px;">
+          <div class="card price-card p-4">
+            <div class="text-center mb-4">
+              <h3 class="h2 font-weight-bold mb-2 text-green-dark">Mentoria Completa em Métodos Contraceptivos</h3>
+              <p class="h5 text-muted mb-4">Transforme sua prática clínica e torne-se referência em aconselhamento
+                contraceptivo
+              </p>
+              <div class="d-flex justify-content-center align-items-center mb-3">
+                <span class="text-muted text-decoration-line-through h4 mr-3">R$ 1.597,00</span>
+                <span class="display-4 text-green-dark font-weight-bold">R$ 1.297,00</span>
+              </div>
+              <p class="text-muted mb-4">ou até 12x de R$ 133,35</p>
+              <a href="https://payfast.greenn.com.br/118434" class="btn btn-success btn-lg btn-block mb-2">Garantir
+                minha vaga</a>
+              <p class="mt-2 text-muted small">Apenas 30 vagas disponíveis para esta turma</p>
+            </div>
+            <div class="border-top pt-4">
+              <h4 class="font-weight-bold mb-3">O que está incluído:</h4>
+              <ul class="list-unstyled mb-4">
+                <li class="mb-2 d-flex align-items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 text-green-500 flex-shrink-0 mt-1" width="20" height="20"
+                    fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                  <span>14 aulas ao vivo</span>
+                </li>
+                <li class="mb-2 d-flex align-items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 text-green-500 flex-shrink-0 mt-1" width="20" height="20"
+                    fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                  <span>Acesso por um ano às gravações das aulas</span>
+                </li>
+                <li class="mb-2 d-flex align-items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 text-green-500 flex-shrink-0 mt-1" width="20" height="20"
+                    fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                  <span>Material complementar (PDFs, fluxogramas e materiais de apoio)</span>
+                </li>
+                <li class="mb-2 d-flex align-items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 text-green-500 flex-shrink-0 mt-1" width="20" height="20"
+                    fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                  <span>Grupo exclusivo no WhatsApp para troca de experiências</span>
+                </li>
+                <li class="mb-2 d-flex align-items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 text-green-500 flex-shrink-0 mt-1" width="20" height="20"
+                    fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                  <span>Certificado de 30 horas</span>
+                </li>
+                <li class="mb-2 d-flex align-items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 text-green-500 flex-shrink-0 mt-1" width="20" height="20"
+                    fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                  <span>Bônus surpresa para os primeiros inscritos</span>
+                </li>
+              </ul>
+              <div class="bg-light p-3 rounded d-flex align-items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 flex-shrink-0 mt-1" width="24" height="24"
+                  fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                  </path>
+                </svg>
+                <div>
+                  <h5 class="font-weight-bold text-success mb-1">Garantia de satisfação de 15 dias</h5>
+                  <p class="text-success mb-0">Se nos primeiros 15 dias você sentir que a mentoria não é para você,
+                    devolvemos 100% do seu investimento, sem questionamentos.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer>
+    <p>
+      &copy; 2025 Mentoria de Métodos Contraceptivos. Todos os direitos
+      reservados.
+    </p>
+  </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const depoimentos = document.querySelectorAll('.card-body');
+      const observer = new IntersectionObserver(
+        entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.15 }
+      );
+      depoimentos.forEach(el => observer.observe(el));
+    });
+  </script>
+</body>
+
 </html>
